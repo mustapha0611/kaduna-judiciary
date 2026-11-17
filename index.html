@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaduna State Citizen Identification Portal</title>
+  <meta name="description" content="Review the requirements, preview the official Kaduna State ID card, and complete your citizen biodata registration.">
+  <meta name="theme-color" content="#004D2C">
+
+  <!-- Resource hints (low-bandwidth strategy, doc §6) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/images/hero-poster.jpg">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="emblems">
+        <img class="crest" src="assets/images/kaduna-crest.jpg" width="212" height="148" alt="Kaduna State Government Crest">
+        <img class="judic" src="assets/images/judiciary-emblem.png" width="65" height="80" alt="Kaduna State Judiciary emblem">
+      </div>
+      <div class="portal-title">
+        <span class="portal-eyebrow">Kaduna State Judiciary</span>
+        <span class="portal-name">Capture form</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container grid">
+        <div class="hero-copy">
+          <span class="badge">Official Registration</span>
+          <h1 id="hero-title">Kaduna State Judiciary Staff Bio Data Capture</h1>
+          <p class="lead">Register your details for the Kaduna State Judiciary staff ID card. Check the requirements below, preview your card, then complete the secure biodata form.</p>
+          <ul class="value-list">
+            <li>Takes about <strong>5 minutes</strong></li>
+            <li>Protected under the Nigeria Data Protection Act 2023</li>
+          </ul>
+          <a class="btn btn-primary" href="#form">Start Registration</a>
+        </div>
+
+        <div class="hero-stage">
+          <div class="video-frame">
+            <video
+              id="hero-video"
+              width="1280" height="720"
+              poster="assets/images/hero-poster.jpg"
+              autoplay muted loop playsinline
+              preload="metadata"
+              aria-label="Animated preview of the Kaduna State Judiciary staff ID card">
+              <source src="assets/videos/hero-video.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="video-toggle" id="video-toggle" aria-pressed="false" aria-label="Pause video">
+              <svg class="icon-pause" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 5h3v14H7zM14 5h3v14h-3z" fill="currentColor"/></svg>
+              <svg class="icon-play" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <p class="stage-hint">Preview of the official staff ID card.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GUIDELINES & PREREQUISITES ============ -->
+    <section class="guidelines" aria-labelledby="guidelines-title">
+      <div class="container">
+        <h2 id="guidelines-title">Before You Begin</h2>
+        <p class="section-intro">Have the following ready. You will need them to complete the form.</p>
+        <div class="grid">
+          <article class="check-card">
+            <h3>Document &amp; Photo Preparation</h3>
+            <ul class="checklist">
+              <li>Clear, recent facial photo on a white background</li>
+              <li>Face fully visible, no hats or sunglasses</li>
+              <li>Proof of Kaduna State residence (e.g. utility bill)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORM CTA ============ -->
+    <section class="form-section" id="form" aria-labelledby="form-title" tabindex="-1">
+      <div class="container">
+        <div class="form-card">
+          <h2 id="form-title">Biodata Registration Form</h2>
+          <p>The form opens securely in a new tab. Your information is used only for issuing your Kaduna State Judiciary staff ID card.</p>
+          <div class="callout" role="note">
+            <strong>Data privacy:</strong> Your personal data is processed in line with the Nigeria Data Protection Act (NDPA) 2023. It will not be shared with third parties except as required by law.
+          </div>
+          <a class="btn btn-primary btn-lg" id="form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdvcYNa7JncM_Rdmra-7MnbY9e8xmj6ksp2GppIizOd_11tSw/viewform" target="_blank" rel="noopener noreferrer">
+            Open Biodata Form <span class="sr-only">(opens in a new tab)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h2 class="footer-heading">Help Desk</h2>
+        <!-- TODO: replace with official contact details -->
+        <p>Phone: <a href="tel:+2340000000000">+234 000 000 0000</a><br>
+           Email: <a href="mailto:support@example.gov.ng">support@example.gov.ng</a></p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Data Protection</h2>
+        <p><a href="#">Privacy Policy</a> <!-- TODO: privacy policy URL --></p>
+      </div>
+      <div class="footer-seals">
+        <img class="crest" src="assets/images/kaduna-crest.jpg" width="212" height="148" alt="">
+        <img class="judic" src="assets/images/judiciary-emblem.png" width="65" height="80" alt="">
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; <span id="year">2026</span> Judicial Service Commission. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Original uploads (web-ready copies live in assets/)
+/hero-image.mov
+/kaduna-logo.jpg.jpeg
+/Judic.png
+
+# Internal design documentation
+*.docx
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
