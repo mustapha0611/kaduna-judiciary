@@ -134,9 +134,10 @@ section { padding-block: clamp(48px, 6vw, 88px); }
   border-bottom: 4px solid var(--gold);
 }
 .header-inner {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px;
+  display: flex; flex-wrap: nowrap; align-items: center; gap: 20px;
   padding-block: 12px;
 }
+.emblems { flex-shrink: 0; }
 .emblems { display: flex; gap: 8px; }
 .emblems img {
   width: 44px; height: 44px; border-radius: 50%;
@@ -151,9 +152,18 @@ section { padding-block: clamp(48px, 6vw, 88px); }
   background: #fff; border: 2px solid var(--gold);
 }
 .footer-seals img.crest, .footer-seals img.judic { width: 44px; height: 44px; padding: 3px; }
-.portal-title { display: flex; flex-direction: column; flex: 1 1 200px; min-width: 0; }
+.portal-title { display: flex; flex-direction: column; flex: 1 1 0; min-width: 0; }
 .portal-eyebrow { font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; opacity: .85; }
 .portal-name { font-weight: 700; font-size: 1rem; line-height: 1.3; }
+
+/* Small phones (≤ 400px): keep logos + title on one row */
+@media (max-width: 400px) {
+  .header-inner { gap: 12px; padding-block: 10px; }
+  .emblems { gap: 6px; }
+  .emblems img.crest, .emblems img.judic { width: 40px; height: 40px; padding: 3px; }
+  .portal-eyebrow { font-size: .6875rem; letter-spacing: .04em; }
+  .portal-name { font-size: .9375rem; }
+}
 
 .site-header :focus-visible { outline-color: #fff; }
 
